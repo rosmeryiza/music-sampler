@@ -1,44 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
-  max-width: 51%;
   font-family: 'Ropa Sans', 'Gill Sans MT', 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  font-family: 'Enriqueta', 'Palatino Linotype', 'Georgia', serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+article {
   background-color: #420D09;
   color: #fff;
-  margin: 0 auto;
+  margin: auto;
+  width: 900px;
 }
 
-header{
-  font-family: 'Enriqueta', 'Palatino Linotype', 'Georgia', serif;
+#bandPic {
+    width: 100%;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: .5rem;
+#picCaption {
+    margin: .25rem;
+    max-width: 700px;
 }
 
-h2 {
-  margin-top: .5rem;
+.text {
+  margin: 2rem;
+  max-width: 700px;
 }
 
-img {
-  max-width: 100%;
-}
-
-#band p {
-  font-size: .85rem;
-  margin-top: .25rem;
-}
-
-.albumRow{
-  max-width: 100%;
+#music {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
 }
 
 .albumCover {
-  margin: .25rem;
+    padding: 1rem;
 }
 
-.player {
+audio {
+    padding-left: 2rem;
+}
+
+footer {
+  padding: 2rem;
   margin: auto;
-  padding: .5rem;
+  max-width: 800px;
+  text-align: center;
 }
 
 a:link {
@@ -56,38 +79,45 @@ a:visited {
 }
 
 @media screen and (max-width: 750px) {
+    article {
+        width: 500px;
+        margin: auto;
+    }
+
+    header {
+        width: 500px;
+    }
+
+    #picCaption {
+      font-size: .75rem;
+    }
+
+    .text {
+        max-width: 100%;
+        margin: 2rem;
+    }
+
+    .albumCover {
+        max-width: 400px;
+        margin: 0;
+    }
+
+    footer {
+      width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
   body {
-    max-width: 100%;
-    margin: .5rem;
+    margin: 0;
   }
 
   header {
-    text-align: center;
-  }
-
-  .player {
-    padding: .5rem 2rem;
-  }
-
-}
-
-@media screen and (max-width: 400px) {
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  .player p {
-    text-align: center;
-  }
-
-  .albumRow {
-    margin: 0 auto;
-    padding: .5rem 1.5rem;
+    padding: 1rem;
   }
 
   footer {
-    text-align: center;
+    text-align: left;
+    padding: 1rem;
   }
-
 }
