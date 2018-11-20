@@ -44,17 +44,12 @@ article {
 }
 
 #music {
-  margin: 0;
   padding: 1rem;
   text-align: center;
 }
 
 .albumCover {
     padding: 1rem;
-}
-
-audio {
-    padding-left: 2rem;
 }
 
 footer {
